@@ -39,3 +39,6 @@ jobs:
         commit_message: "Automatic commit"
         force: false
         target_branch: main
+    - name: Commit Changes
+      run: |
+        git push
