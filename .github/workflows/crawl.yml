@@ -33,9 +33,7 @@ jobs:
         python main.py
     - name: Make Some Difference
       run: |
-        echo "$(date '+%Y-%m-%d %H:%M:%S')" > .timestamp
-        
-          - name: 部署到Github
+        - name: 部署到Github
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           token: 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
