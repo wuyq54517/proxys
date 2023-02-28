@@ -31,11 +31,12 @@ jobs:
     - name: Update Subscribe
       run: |
         python main.py
-    - name: Commit Changes
-      run: |
-        git config core.ignorecase false
-        git config --local user.email "1275337365@qq.com"
-        git config --local user.name "wuyq54517"
-        git add .
-        git commit -m "Updated at $(date '+%Y-%m-%d %H:%M:%S')"
-        git push
+    - name: commit
+      uses: devops-infra/action-commit-push@master
+      with:
+        github_token: "${{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}}"
+        add_timestamp: true
+        commit_prefix: "[AUTO]"
+        commit_message: "Automatic commit"
+        force: false
+        target_branch: main
