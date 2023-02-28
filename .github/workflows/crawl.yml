@@ -37,7 +37,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           token: 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
-          repository-name: anzhiyu-a/anzhiyu-a.github.io
+          repository-name: wuyq54517/proxys
           branch: main
           folder: public
           commit-message: "Updated"
