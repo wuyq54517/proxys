@@ -42,4 +42,4 @@ jobs:
           repository-name: anzhiyu-a/anzhiyu-a.github.io
           branch: main
           folder: public
-          commit-message: "Updated at $(date '+%Y-%m-%d %H:%M:%S')"
+          commit-message: "Updated"
