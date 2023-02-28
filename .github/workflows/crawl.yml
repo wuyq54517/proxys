@@ -31,13 +31,11 @@ jobs:
     - name: Update Subscribe
       run: |
         python main.py
-    - name: Make Some Difference
+    - name: Commit Changes
       run: |
-        - name: 部署到Github
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          token: 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
-          repository-name: wuyq54517/proxys
-          branch: main
-          folder: public
-          commit-message: "Updated"
+        git config core.ignorecase false
+        git config --local user.email "1275337365@qq.com"
+        git config --local user.name "wuyq54517"
+        git add .
+        git commit -m "Updated at $(date '+%Y-%m-%d %H:%M:%S')"
+        git push
